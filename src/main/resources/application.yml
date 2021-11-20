@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/queue?characterEncoding=utf-8&useSSL=false&&serverTimezone=GMT%2B8
+
+  redis:
+    database: 0
+    host: "192.168.75.128"
+    port: 6379
+    password: "12345"
+
+  thymeleaf:
+    cache: false
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mappers/*.xml
+
